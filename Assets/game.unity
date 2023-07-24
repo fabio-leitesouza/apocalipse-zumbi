@@ -1027,6 +1027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hotel_Estacionamento_Destruido
       objectReference: {fileID: 0}
+    - target: {fileID: 3055925237053615186, guid: f16e2b87c59bbf842b315fbb74365da4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3055925237053714546, guid: f16e2b87c59bbf842b315fbb74365da4, type: 3}
       propertyPath: m_RootOrder
       value: 1
