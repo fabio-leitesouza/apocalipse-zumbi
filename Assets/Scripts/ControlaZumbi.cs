@@ -17,10 +17,18 @@ public class ControlaZumbi : MonoBehaviour
     {
         
     }
-    void FixedUpdate(){
-        Vector3 direcaoJogador = Jogador.transform.position - transform.position;
-        GetComponent<Rigidbody>().MovePosition
-            (GetComponent<Rigidbody>().position + 
-            direcaoJogador.normalized * Velocidade * Time.deltaTime); 
+    void FixedUpdate(){     
+        
+        float distancia = Vector3.Distance(transform.position, Jogador.transform.position);
+
+        if(distancia > 2.5){
+            Vector3 direcaoJogador = Jogador.transform.position - transform.position;
+            GetComponent<Rigidbody>().MovePosition
+                (GetComponent<Rigidbody>().position + 
+                direcaoJogador.normalized * Velocidade * Time.deltaTime); 
+
+            Quaternion novaRotacao = Quaternion.LookRotation(direcaoJogador);
+            GetComponent<Rigidbody>().MoveRotation(novaRotacao);
+        }
     }
 }
