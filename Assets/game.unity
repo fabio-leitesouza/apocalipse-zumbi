@@ -503,6 +503,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocidade: 8
+  MascaraChao:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!95 &944088043
 Animator:
   serializedVersion: 4
