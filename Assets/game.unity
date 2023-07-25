@@ -639,6 +639,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 466879258, guid: 35861510587b7489780fe86970823679, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 69a526a296b75074db3310a32ab2ba19, type: 3}
+    - target: {fileID: 466879258, guid: 35861510587b7489780fe86970823679, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
       propertyPath: m_Name
       value: Zumbi
